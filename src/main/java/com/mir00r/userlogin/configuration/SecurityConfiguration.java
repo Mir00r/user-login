@@ -56,7 +56,6 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .antMatchers("/registration").permitAll()
                 .antMatchers("/admin/**").hasRole(Constant.ROLE_TYPE.admin.getRoleName())
                 //.antMatchers("/user/**")
-                //.hasAnyRole(Constant.ROLE_TYPE.admin.getRoleName(), Constant.ROLE_TYPE.blogger.getRoleName())
                 .anyRequest().authenticated()
                 .and()
                 .csrf().disable().formLogin()

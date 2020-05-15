@@ -1,4 +1,4 @@
-package com.mir00r.userlogin.users.LoginController;
+package com.mir00r.userlogin.users.controllers;
 
 import com.mir00r.userlogin.Utils.Constant;
 import com.mir00r.userlogin.users.models.entites.User;
