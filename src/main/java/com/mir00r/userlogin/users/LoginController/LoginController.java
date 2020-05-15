@@ -51,7 +51,7 @@ public class LoginController {
 
         if (!bindingResult.hasErrors()) {
             userService.save(user);
-            modelAndView.addObject("successMessage", "Registration successful please activate this account from admin user.");
+            modelAndView.addObject("successMessage", "Registration successful.");
             modelAndView.addObject("user", new User());
         }
         modelAndView.setViewName("registration");
